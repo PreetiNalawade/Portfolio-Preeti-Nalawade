@@ -1,44 +1,73 @@
 import React from "react";
 import "./About.css";
 import pic from "../../image/Preeti.jpg";
+import Fade from "react-reveal/Fade";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 const About = () => {
+  const iconStyle = {
+    color: "inherit", // Set to 'inherit' to preserve the default color
+  };
   return (
-    <div className="container about-section">
+    <div className="container about-section" id="about">
       <div className="row">
-        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div className="profile-image">
-            <img src={pic} alt="Preeti N"></img>
-          </div>
-        </div>
-        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-          <div className="about-details">
-            <div className="about-title">
-              <h5>About Me</h5>
+        <Fade bottom>
+          <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <div className="profile-image">
+              <img src={pic} alt="Preeti N"></img>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-              ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-              viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-              imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-              ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
-              tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-              adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
-              pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt
-              tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam
-              quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
-              leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis
-              magna. Sed consequat, leo eget bibendum sodales, augue velit
-              cursus nunc,
-            </p>
+          </div>
+        </Fade>
+        <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <div className="about-title">
+            <h1>About Me</h1>
+          </div>
+          <span className="line"></span>
+          <div className="about-details">
+            <Fade right>
+              <p>
+                With over 7 years of experience in information technology, I am
+                a versatile and accomplished software engineer and product
+                owner, specializing in MERN stack development, Adobe Experience
+                Manager (AEM), and big data analytics. As a Graduate Research
+                Assistant at Georgia State University - J. Mack Robinson College
+                of Business, I leverage my technical and leadership skills to
+                spearhead innovative and impactful IoT projects, demonstrating
+                expertise in project conception, development, and delivery.
+              </p>
+              <p>
+                In addition to my academic pursuits, I hold multiple
+                certifications in AEM and Scrum, enhancing my proficiency and
+                credibility in managing and optimizing digital experiences. As a
+                former Senior Web Application Developer at Accenture and Senior
+                Software Development Engineer at Wipro Digital, I have
+                contributed to the development of high-performance e-commerce
+                platforms and single page applications, resulting in significant
+                improvements in user engagement, satisfaction, and security. I
+                am eager to apply my diverse skill sets and domain knowledge to
+                new challenges and opportunities in the software industry.
+              </p>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <a
+                  href="https://github.com/PreetiNalawade"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub
+                    size={30}
+                    style={{ ...iconStyle, marginRight: "10px" }}
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/preeti-nalawade-11a3b914b/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin size={30} style={iconStyle} />
+                </a>
+              </div>
+            </Fade>
           </div>
         </div>
         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12"></div>

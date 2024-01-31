@@ -1,17 +1,28 @@
 .sidebar-section {
-  display: flex;
-  background-color: #030303da;
+  height: 100vh;
+  background-image: linear-gradient(#ffffffa2, #ffffffe6),
+    url("../../../src/assets/images/hero-bg-light.webp");
+  background-size: cover;
+  background-position: center;
+  color: white; /* Set text color to contrast with the background image */
+  text-align: left;
+  min-block-size: calc(100vh + var(--radius));
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .sidebar {
   height: 100vh;
-  background-color: #030303da;
+  background-image: url("../../image/bgblack.avif");
   width: 95px;
   position: fixed;
 }
 
 .sidebar-expand {
-  width: 230px;
+  width: 210px;
 }
 
 .icon-sidebar-collapse-expand {

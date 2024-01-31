@@ -1,29 +1,43 @@
 .profile-picture img {
   border-radius: 90px;
-  margin-top: 5px;
-  height: 180px;
-  width: 180px;
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
   display: flex;
   vertical-align: middle;
   margin: 0 auto;
   object-fit: cover;
-  border: 3px solid white;
+  border: 3px solid gray;
 }
+
 .navbar-items ul li {
   color: white;
   list-style-type: none;
   cursor: pointer;
   margin-top: 30px;
+  text-decoration: none;
 }
+
 .navbar-items ul li svg {
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 25px;
+  margin-left: 10px;
 }
+
 .navbar-icons-only ul li {
-  margin-top: 20px;
+  margin-top: 30px;
   cursor: pointer;
   list-style-type: none;
 }
+
 .navbar-icons-only ul li svg {
   margin-left: 10px;
+}
+
+.navbar-items ul li a {
+  text-decoration: none;
+}
+
+.nav-item .active {
+  border-left: 2px solid yellow;
+  color: yellow;
 }

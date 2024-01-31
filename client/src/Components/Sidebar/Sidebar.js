@@ -10,7 +10,7 @@ const Sidebar = () => {
     setExpandSidebar(!expandSidebar);
   };
   return (
-    <div className="container-fluid sidebar-section">
+    <div className="container-fluid sidebar-section" id="sidebar">
       <div className={expandSidebar ? "sidebar-expand sidebar" : "sidebar"}>
         <div className="icon-sidebar-collapse-expand">
           <p onClick={handlerExpandClick}>
