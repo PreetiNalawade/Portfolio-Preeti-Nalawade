@@ -24,7 +24,7 @@
 }
 
 .navbar-icons-only ul li {
-  margin-top: 30px;
+  margin-top: 8px;
   cursor: pointer;
   list-style-type: none;
 }
@@ -40,4 +40,24 @@
 .nav-item .active {
   border-left: 2px solid yellow;
   color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-picture img {
+    height: 100px; /* Adjust height for smaller screens */
+    width: 100px; /* Adjust width for smaller screens */
+    margin-top: 10px;
+  }
+
+  .navbar-items ul li,
+  .navbar-icons-only ul li {
+    margin-top: 10px; /* Adjust margin for smaller screens */
+    width: 10px;
+  }
+
+  .navbar-items ul li svg,
+  .navbar-icons-only ul li svg {
+    margin-right: 15px; /* Adjust margin for smaller screens */
+    margin-left: 5px; /* Adjust margin for smaller screens */
+  }
 }

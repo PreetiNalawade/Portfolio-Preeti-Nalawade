@@ -1,44 +1,44 @@
 .sidebar-section {
-  height: 100vh;
+  height: 120vh;
   background-image: linear-gradient(#ffffffa2, #ffffffe6),
     url("../../../src/assets/images/hero-bg-light.webp");
   background-size: cover;
   background-position: center;
-  color: white; /* Set text color to contrast with the background image */
-  text-align: left;
+  color: white;
   min-block-size: calc(100vh + var(--radius));
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
+
+  /* Adjust background size for all screen sizes */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.sidebar {
+/* .sidebar {
   height: 100vh;
   background-image: url("../../image/bgblack.avif");
   width: 95px;
   position: fixed;
-}
+} */
 
-.sidebar-expand {
+/* .sidebar-expand {
   width: 210px;
-}
+} */
 
-.icon-sidebar-collapse-expand {
+/* .icon-sidebar-collapse-expand {
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: flex-end; 
+  justify-content: flex-end; 
   cursor: pointer;
-}
+} */
 
-.icon-sidebar-collapse-expand p svg {
+/* .icon-sidebar-collapse-expand p svg {
   background-color: #19092c;
   padding: 5px;
   color: white;
   border-radius: 5px;
   margin-top: 50px;
-}
+} */
 
 .container-fluid {
   padding-left: 0px !important;
@@ -49,5 +49,22 @@
 @media (max-width: 1000px) {
   .sidebar {
     display: none;
+  }
+}
+
+/* Media queries for responsive styles */
+@media screen and (max-width: 1200px) {
+  .sidebar-section {
+    background-size: auto; /* Adjust background size for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-section {
+    background-size: auto; /* Adjust background size for smaller screens */
+  }
+
+  .icon-sidebar-collapse-expand {
+    margin-top: 30px; /* Adjust margin for smaller screens */
   }
 }

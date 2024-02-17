@@ -108,10 +108,10 @@ const SidebarList = ({ expandSidebar }) => {
                 Certifications
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <FcRating size={30} />
               Awards
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 to="contact"
@@ -206,9 +206,7 @@ const SidebarList = ({ expandSidebar }) => {
                 <FcList size={30} />
               </Link>
             </li>
-            <li className="nav-item">
-              <FcRating size={30} />
-            </li>
+
             <li className="nav-item">
               <Link
                 to="contact"

@@ -56,28 +56,32 @@ h3,
 
 /* Add any additional styling as needed */
 
-/* Add any additional styling as needed */
-
 .home {
-  height: 800px;
+  height: auto;
   margin-top: 50px;
   color: white;
+  align-content: center;
 }
 
 .home-content {
   padding: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: var(--text-large);
 }
 .home-content h1 {
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Mona Sans", sans-serif;
   color: black;
 }
 
 .home-content h3 {
-  font-size: 30px;
+  font-size: 22px;
   font-family: "Mona Sans", sans-serif;
+  color: black;
+}
+.home-content h2 {
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
   color: black;
 }
 
@@ -88,7 +92,7 @@ h3,
 .button-86 {
   all: unset;
   width: 140px;
-  height: 30px;
+  height: 20px;
   font-size: 16px;
   background: transparent;
   border: none;
@@ -104,6 +108,7 @@ h3,
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-top: 20px;
 }
 
 .button-86::after,
@@ -163,6 +168,9 @@ h3,
 
 .rotate-container {
   text-align: center;
+  color: black;
+
+  margin: 20px;
 }
 
 .icons-container {

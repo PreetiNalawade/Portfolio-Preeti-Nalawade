@@ -13,23 +13,30 @@ import Test from "./Components/Test/Test";
 import ScrollToTop from "react-scroll-to-top";
 import "./App.css";
 import NavBarMobileView from "./Components/Sidebar/NavBarMobileView";
-import Footer from "./Components/Footer/Footer";
+import FooterComp from "./Components/Footer/Footer";
+import ProjectList from "./Components/Projects/ProjectList";
+import Header from "./Components/Header/Header";
+import Navbar from "./Components/Navbar/Navbar";
 
 export const App = () => {
   return (
     <div>
-      <NavBarMobileView />
+      <Navbar />
+      {/* <Header /> */}
+      {/* <NavBarMobileView /> */}
+
       <Sidebar />
       <About />
 
       <WorkExp />
       <Education />
-      <Techstack />
+      {/* <Techstack /> */}
       <Projects />
+      <Test />
+      {/* <Techstack /> */}
       <Certification />
       <Contact />
-      <Footer />
-
+      <FooterComp />
       <ScrollToTop
         smooth={true}
         top="600"

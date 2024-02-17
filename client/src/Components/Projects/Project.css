@@ -6,6 +6,7 @@
   -webkit-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
   -moz-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
   margin-top: 50px;
+  display: flex;
 }
 .collapse-option {
   display: flex;
@@ -25,7 +26,7 @@
   background-color: black;
   color: white;
   border-radius: 90px;
-  padding: 8px;
+  padding: 1px;
   text-align: center;
 }
 .live-demo-button {
