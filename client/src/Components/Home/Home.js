@@ -13,6 +13,8 @@ import {
 import { IoHandRight } from "react-icons/io5";
 
 const Home = () => {
+  const resumeLink =
+    "https://drive.google.com/file/d/11nNXdN5SRqd8sjqTymxd1WqHLSlDsUiL/view?usp=sharing";
   return (
     <div className="container-fluid home" id="home">
       <div className="container home-content">
@@ -53,7 +55,11 @@ const Home = () => {
           />
         </div>
 
-        <button className="button-86" role="button">
+        <button
+          className="button-86"
+          role="button"
+          onClick={() => window.open(resumeLink, "_blank")}
+        >
           Download Resume
         </button>
 
